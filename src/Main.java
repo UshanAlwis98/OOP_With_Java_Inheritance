@@ -4,19 +4,13 @@ import ChatGPT_Challange_01.BankAccount;
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void main(String[] args) {
-//
-//        BankAccount ba1 = new BankAccount("345876", "Ushan Loshitha", 545);
-//
-//        System.out.println(ba1.getBalance());
-//
-//        System.out.println(ba1.deposit(500));
-//
-//        System.out.println(ba1.withdraw(300));
-//
-//        ba1.displayAccountDetails();
 
-        Car car = new Car();
-        car.describeCar();
+        String word = "Welcome to Pearson";
+
+        for (int i = word.length() - 1; i >= 0; i--) {
+            System.out.print(word.charAt(i));
+        }
+
 
     }
 }
