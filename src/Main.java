@@ -7,8 +7,10 @@ public class Main {
 
         String word = "Welcome to Pearson";
 
-        for (int i = word.length() - 1; i >= 0; i--) {
-            System.out.print(word.charAt(i));
+        String[] arr = word.split(" ");
+
+        for(int i = arr.length - 1; i >= 0; i--){
+            System.out.print(arr[i]+ " ");
         }
 
 
