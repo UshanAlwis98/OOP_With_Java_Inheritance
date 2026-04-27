@@ -5,13 +5,21 @@ import ChatGPT_Challange_01.BankAccount;
 public class Main {
     public static void main(String[] args) {
 
-        String word = "Welcome to Pearson";
+        // Valid Details
+        Student student = new Student();
+        student.setName("Ushan");
+        student.setAge(18);
+        student.setGpa(3.18);
+        student.printDetails();
 
-        String[] arr = word.split(" ");
 
-        for(int i = arr.length - 1; i >= 0; i--){
-            System.out.print(arr[i]+ " ");
-        }
+        System.out.println("---------------");
+
+        // Invalid details
+        student.setName("");
+        student.setAge(15);
+        student.setGpa(4.18);
+        student.printDetails();
 
 
     }
